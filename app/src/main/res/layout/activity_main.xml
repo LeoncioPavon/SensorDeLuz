@@ -27,6 +27,9 @@
         android:textSize="30sp"
         android:textStyle="bold" />
 
+    <!---Barra de progreso extraída de la librería de Mikhael Lopez
+     https://github.com/lopspower/CircularProgressBar -->
+
     <com.mikhaellopez.circularprogressbar.CircularProgressBar
         android:id="@+id/ProgessBar"
         android:layout_width="300dp"

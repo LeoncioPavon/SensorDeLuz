@@ -83,7 +83,7 @@ class MainActivity : AppCompatActivity(), SensorEventListener{
             else -> "Excesivamente brillante"
         }
     }
-    
+
     override fun onAccuracyChanged(sensor: Sensor?, accuracy: Int) {
         return
     }
