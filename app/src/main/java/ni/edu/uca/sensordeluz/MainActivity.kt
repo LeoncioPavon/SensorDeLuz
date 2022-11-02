@@ -57,7 +57,7 @@ class MainActivity : AppCompatActivity(), SensorEventListener{
             //Creación de un valor para la luz en 0
             val light1 = event.values[0]
 
-            /*Confgurtación del texto para la vista de nuestros resultados.
+            /*Configurtación del texto para la vista de nuestros resultados.
              *Interpolamos las variables de la luz para obtener un ressultado numérico y de cadena
             */
             text.text = "Sensor: $light1%\nIntensidad: ${brightness(light1)}"
@@ -67,7 +67,7 @@ class MainActivity : AppCompatActivity(), SensorEventListener{
     }
 
     /*Función que tomará el nivel de brillo captado por el sensor  y de tipo float ya que
-      es el tipo de dat con el que trabaja el sensor
+      es el tipo de dato con el que trabaja el sensor
      */
     private fun brightness(brightness: Float): String {
         //Devolveremos estos strings según la medida del sensor
@@ -91,7 +91,7 @@ class MainActivity : AppCompatActivity(), SensorEventListener{
     //Registra el llamado al sensor.
     override fun onResume() {
         super.onResume()
-        /*El contexto que tomará será el sensor dde brillo  y llamamos al administrador de sensores
+        /*El contexto que tomará será el sensor de brillo  y llamamos al administrador de sensores
           con retraso con el fin de captar lecturas a una frecuencia normal o lenta
         */
         sensorManager.registerListener(this, brightness, SensorManager.SENSOR_DELAY_NORMAL)
